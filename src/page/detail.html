@@ -1,0 +1,31 @@
+<div class="d-flex justify-content-around container" style="margin-top: 100px">
+  <div class="hinhanh">
+    <img src="../assets/ip/{{detail.anh}}.webp" alt="ảnh san phẩm" />
+  </div>
+  <div class="thongTin">
+    <h4>{{detail.ten}}</h4>
+    <p>Số lượng :</p>
+    <p>
+      <span style="font-size: large; font-weight: 600" class="text-danger"
+        >Giá: {{detail.giaSale}} VND</span
+      >
+      <span style="text-decoration: line-through; padding-left: 10px"
+        >{{detail.gia}} </span
+      >VND
+    </p>
+    <button
+      type="button"
+      style="width: 200px; font-size: larger"
+      class="btn btn-info"
+    >
+      Mua ngay
+    </button>
+    <button
+      type="button"
+      style="font-size: larger"
+      class="btn btn-outline-danger"
+    >
+      <i class="bi bi-bag-plus-fill"></i>
+    </button>
+  </div>
+</div>

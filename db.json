@@ -1,0 +1,216 @@
+{
+  "user": [
+    {
+      "username": "admin",
+      "password": "admin",
+      "vaiTro": "quan ly",
+      "id": "1"
+    },
+    {
+      "username": "kh1",
+      "password": "kh1",
+      "vaiTro": "khach hang",
+      "id": "2"
+    },
+    {
+      "username": "kh2",
+      "password": "kh2",
+      "vaiTro": "khach hang",
+      "id": "3"
+    },
+    {
+      "username": "kh3",
+      "password": "kh3",
+      "vaiTro": "khach hang",
+      "id": "4"
+    }
+  ],
+  "sanPham": [
+    {
+      "ten": "Iphone 13 pro xanh",
+      "mota": "mota 2",
+      "gia": 93,
+      "giaSale": 89,
+      "manHinh": "manHinh 2",
+      "anh": "iphone-13-pro-xanh.jpg",
+      "hang": "iphone",
+      "loai": "Pin trâu",
+      "id": "2"
+    },
+    {
+      "ten": "Iphone 13 xanh",
+      "mota": "mota 3",
+      "gia": 39,
+      "giaSale": 45,
+      "manHinh": "manHinh 3",
+      "anh": "iphone-13-xanh.jpg",
+      "hang": "iphone",
+      "loai": "Điện thoại gaming",
+      "id": "3"
+    },
+    {
+      "ten": "Iphone 14 đen",
+      "mota": "mota 4",
+      "gia": 2,
+      "giaSale": 30,
+      "manHinh": "manHinh 4",
+      "anh": "iphone-14-mau-den.jpg",
+      "hang": "iphone",
+      "loai": "Hỗ trợ 5G",
+      "id": "4"
+    },
+    {
+      "ten": "S23 ultra tím",
+      "mota": "mota 5",
+      "gia": 16,
+      "giaSale": 34,
+      "manHinh": "manHinh 5",
+      "anh": "s23-ultra-tim",
+      "hang": "Samsung",
+      "loai": "Dung lượng lớn",
+      "id": "5"
+    },
+    {
+      "ten": "Galaxy Z_Flip",
+      "mota": "mota 6",
+      "gia": 98,
+      "giaSale": 15,
+      "manHinh": "manHinh 6",
+      "anh": "samsung_galaxy_z_flip_m_i_2022-1_1",
+      "hang": "Samsung",
+      "loai": "Hỗ trợ 5G",
+      "id": "6"
+    },
+    {
+      "ten": "Galaxy A73",
+      "mota": "mota 7",
+      "gia": 41,
+      "giaSale": 59,
+      "manHinh": "manHinh 7",
+      "anh": "samsung-galaxy-a73-1-600x600",
+      "hang": "Samsung",
+      "loai": "Pin trâu",
+      "id": "7"
+    },
+    {
+      "ten": "Poco X4",
+      "mota": "mota 8",
+      "gia": 70,
+      "giaSale": 4,
+      "manHinh": "manHinh 8",
+      "anh": "poco-x4-pro",
+      "hang": "xiaomi",
+      "loai": "Pin trâu",
+      "id": "8"
+    },
+    {
+      "ten": "Galaxy s22 ultra",
+      "mota": "mota 9",
+      "gia": 92,
+      "giaSale": 76,
+      "manHinh": "manHinh 9",
+      "anh": "sm-s908_galaxys22ultra_front_burgundy_211119",
+      "hang": "Samsung",
+      "loai": "Điện thoại gaming",
+      "id": "9"
+    },
+    {
+      "ten": "Redmi 10c",
+      "mota": "mota 10",
+      "gia": 28,
+      "giaSale": 43,
+      "manHinh": "manHinh 10",
+      "anh": "xiaomi-redmi-10c-1-002",
+      "hang": "xiaomi",
+      "loai": "Điện thoại gaming",
+      "id": "10"
+    },
+    {
+      "ten": "Xiaomi 12t xanh",
+      "mota": "mota 11",
+      "gia": 22,
+      "giaSale": 63,
+      "manHinh": "manHinh 11",
+      "anh": "xiaomi-12t-xanh_2",
+      "hang": "xiaomi",
+      "loai": "Dung lượng lớn",
+      "id": "11"
+    },
+    {
+      "ten": "Xiaomi 12t đen",
+      "mota": "mota 12",
+      "gia": 13,
+      "giaSale": 61,
+      "manHinh": "manHinh 12",
+      "anh": "xiaomi-12t-den_1",
+      "hang": "xiaomi",
+      "loai": "Dung lượng lớn",
+      "id": "12"
+    },
+    {
+      "ten": "Iphone 14plus tim",
+      "mota": "mota 13",
+      "gia": 54,
+      "giaSale": 86,
+      "manHinh": "manHinh 13",
+      "anh": "iphone-14-plus-tim.jpg",
+      "hang": "iphone",
+      "loai": "Điện thoại gaming",
+      "id": "13"
+    },
+    {
+      "ten": "PMS",
+      "mota": "mota 14",
+      "gia": 72,
+      "giaSale": 41,
+      "manHinh": "manHinh 14",
+      "anh": "pms_1655902420.18254534_1",
+      "hang": "xiaomi",
+      "loai": "Pin trâu",
+      "id": "14"
+    },
+    {
+      "ten": "ten 15",
+      "mota": "mota 15",
+      "gia": 30,
+      "giaSale": 19,
+      "manHinh": "manHinh 15",
+      "anh": "anh 15",
+      "hang": "hang 15",
+      "loai": "loai 15",
+      "id": "15"
+    },
+    {
+      "ten": "Iphone SE 2023",
+      "mota": "mota 16",
+      "gia": 4,
+      "giaSale": 100,
+      "manHinh": "manHinh 16",
+      "anh": "iphone-se-2023-minh-hoa-00.jpg",
+      "hang": "iphone",
+      "loai": "Pin trâu",
+      "id": "16"
+    }
+  ],
+  "loai": [
+    {
+      "theLoai": "Điện thoại gaming",
+      "id": "1"
+    },
+    {
+      "theLoai": "Hỗ trợ 5G",
+      "id": "2"
+    },
+    {
+      "theLoai": "Dung lượng lớn",
+      "id": "3"
+    },
+    {
+      "theLoai": "Pin trâu",
+      "id": "4"
+    },
+    {
+      "id": "og1pakE"
+    }
+  ]
+}

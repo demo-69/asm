@@ -1,0 +1,55 @@
+<div class="container">
+  <h4 style="text-align: center">Tất cả sản phẩm</h4>
+  <div
+    class="d-flex"
+    style="
+      border: 1px solid gray;
+      border-radius: 20px;
+      background-color: rgb(218, 219, 219);
+    "
+  >
+    <div
+      style="
+        background-color: rgb(175, 212, 211);
+        width: 200px;
+        border-radius: 20px;
+      "
+      class="thuMuc p-2"
+    >
+      <h4>Danh mục</h4>
+      <ul>
+        <li ng-repeat="lsp in listLoaiSP">
+          <a href="#dtGaming/{{lsp.theLoai}}">{{lsp.theLoai}}</a>
+        </li>
+      </ul>
+      <div class="addSanPham"></div>
+    </div>
+    <div
+      style="background-color: rgb(218, 219, 219); border-radius: 20px"
+      class="sanPham w-100"
+    >
+      <div class="row">
+        <div
+          ng-repeat="sp in listSanPham"
+          class="col-lg-4 d-flex justify-content-around my-3"
+        >
+          <div class="card" style="width: 18rem">
+            <img
+              src="../assets/ip/{{sp.anh}}.webp"
+              class="card-img-top"
+              alt="ảnh san phẩm"
+            />
+            <div class="card-body">
+              <a href="#detail/{{sp.id}}"
+              ><h5 class="card-title">{{sp.ten}}</h5></a
+            >
+              <p class="card-text">{{sp.mota}}</p>
+              <p>Giá: {{sp.giaSale}} <span>{{sp.gia}}</span></p>
+              <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

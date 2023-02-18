@@ -1,0 +1,165 @@
+d
+<div class="container">
+  <h4 style="text-align: center">Tất cả sản phẩm</h4>
+  <div class="d-flex" style="border: 2px solid gray; border-radius: 20px">
+    <div
+      style="
+        background-color: rgb(196, 209, 205);
+        width: 200px;
+        border-radius: 20px;
+      "
+      class="thuMuc p-2"
+    >
+      <h4>Admin</h4>
+      <ul>
+        <li><a href="#addSanPham">Sản Phẩm</a></li>
+        <li><a href="#addCategory">Thể loại</a></li>
+      </ul>
+    </div>
+    <div
+      style="background-color: #f5f6f8; border-radius: 20px"
+      class="sanPham w-100"
+    >
+      <form class="from1" style="border-radius: 20px">
+        Tên sp: <input type="text" ng-model="fromProduct.ten" /><span
+          class="text-danger"
+          >{{eror.ten}}</span
+        >
+        <br />
+        Giá : <input type="text" ng-model="fromProduct.giaSale" /><span
+          class="text-danger"
+          >{{eror.giaSale}}</span
+        >
+        <br />
+        Mô tả : <input type="text" ng-model="fromProduct.mota" /><span
+          class="text-danger"
+          >{{eror.mota}}</span
+        >
+        <br />
+        Màn hình: <input type="text" ng-model="fromProduct.manHinh" /><span
+          class="text-danger"
+          >{{eror.manHinh}}</span
+        >
+        <br />
+        Hãng : <input type="text" ng-model="fromProduct.hang" /><span
+          class="text-danger"
+          >{{eror.hang}}</span
+        >
+        <br />
+        Loại : <input type="text" ng-model="fromProduct.loai" /><span
+          class="text-danger"
+          >{{eror.loai}}</span
+        >
+        <br />
+        anh : <input type="text" ng-model="fromProduct.anh" /><span
+          class="text-danger"
+          >{{eror.anh}}</span
+        >
+        <div class="d-flex justify-content-center">
+          <select
+            style="width: 300px"
+            class="form-select"
+            aria-label="Default select example"
+          >
+            <option selected>Chọn thể loại</option>
+            <option ng-repeat="tl in listLoaiSP" value="1">
+              {{tl.theLoai}}
+            </option>
+          </select>
+        </div>
+        <br />
+        <br />
+        <input type="submit" ng-click="addProduct($event); " value="add" />
+        <input
+          type="submit"
+          ng-click="updateProduct($event); "
+          value="update"
+        />
+      </form>
+      <div class="hienThiDS">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">STT</th>
+              <th scope="col">ID</th>
+              <th scope="col">Tên SP</th>
+              <th scope="col">Giá</th>
+              <th scope="col">Mô tả</th>
+              <th scope="col">Màn hình</th>
+              <th scope="col">Hãng</th>
+              <th scope="col">Loại</th>
+              <th scope="col">XXX</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="sp in listSanPham">
+              <th scope="row">{{$index+1}}</th>
+              <td>{{sp.id}}</td>
+              <td>{{sp.ten}}</td>
+              <td>{{sp.giaSale}}</td>
+              <td>{{sp.mota}}</td>
+              <td>{{sp.manHinh}}</td>
+              <td>{{sp.hang}}</td>
+              <td>{{sp.loai}}</td>
+              <td>
+                <a
+                  href="#/index/sanPham/detail{{sp.id}}"
+                  ng-click="detailSanPham($event,$index);"
+                  >detail</a
+                >
+                <a
+                  href="#/index/sanPham/remove{{sp.id}}"
+                  ng-click="removeSanPham($event,$index);"
+                  >remove</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="theLoai">
+        <div class="from1">
+          Tên thể loại : <input type="text" ng-model="theLoai1" />
+          <span class="text-danger">{{eror.theLoai}}</span>
+          <br />
+          <br />
+          <input type="submit" ng-click="addTheLoai($event)" value="add" />
+          <input
+            type="submit"
+            ng-click="updateTheLoai($event)"
+            value="update"
+          />
+        </div>
+        <div class="hienThiTheLoai">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">STT</th>
+                <th scope="col">ID</th>
+                <th scope="col">Ten Loai</th>
+                <th scope="col">XXX</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="tl in listLoaiSP">
+                <th scope="row">{{$index+1}}</th>
+                <td>{{tl.id}}</td>
+                <td>{{tl.theLoai}}</td>
+                <td>
+                  <a href="#/quanLy/detail/{{tl.id}}" ng-click="detail($event)"
+                    >detail</a
+                  >
+                  <a
+                    href="#/quanLy/remove/{{tl.id}}"
+                    ng-click="remove($event,$index)"
+                    >remove</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

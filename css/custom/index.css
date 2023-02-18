@@ -1,0 +1,203 @@
+header {
+  padding-top: 20px;
+}
+footer {
+  background-color: #f5f6f8;
+  padding-top: 50px;
+}
+footer ul {
+  padding-left: 0px;
+  padding-top: 10px;
+  text-decoration: none;
+  list-style: none;
+}
+footer ul li {
+  padding: 5px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+footer h4 {
+  font-weight: 700px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2d64e6;
+}
+.nav-item {
+  padding-left: 10px;
+}
+.thongTin {
+  border: 1px black;
+  width: 500px;
+  background-color: #becae4;
+}
+.thuMuc ul {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.thuMuc ul li {
+  list-style: none;
+  padding-top: 80px;
+}
+.thuMuc ul li a {
+  text-decoration: none;
+  color: black;
+}
+.from1 {
+  padding-top: 50px;
+  background-color: #f5f6f8;
+  text-align: center;
+}
+.from1 input {
+  margin: 10px;
+}
+.product {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* css login */
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  padding: 15px;
+  border: 2px dotted #cccccc;
+  border-radius: 10px;
+}
+h1 {
+  color: #009999;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.input-box {
+  margin-bottom: 10px;
+}
+.input-box input {
+  padding: 7.5px 15px;
+  width: 100%;
+  border: 1px solid #cccccc;
+  outline: none;
+}
+.btn-box {
+  text-align: right;
+  margin-top: 30px;
+}
+.btn-box button {
+  padding: 7.5px 15px;
+  border-radius: 2px;
+  background-color: #009999;
+  color: #ffffff;
+  border: none;
+  outline: none;
+}
+/* css dang ký */
+.col-6 {
+  float: left;
+  width: 50%;
+}
+.margin_b {
+  margin-bottom: 7.5px;
+}
+.clear {
+  clear: both;
+}
+
+main {
+  background-color: #dddddd;
+  min-height: 300px;
+  padding: 7.5px 15px;
+}
+
+h1 {
+  color: #009999;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.register-form {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  padding: 15px;
+  border: 2px dotted #cccccc;
+  border-radius: 10px;
+}
+
+.input-box {
+  margin-bottom: 10px;
+}
+.input-box input[type="text"],
+.input-box input[type="password"],
+.input-box input[type="date"] {
+  padding: 7.5px 15px;
+  width: 100%;
+  border: 1px solid #cccccc;
+  outline: none;
+  font-size: 16px;
+  display: inline-block;
+  height: 40px;
+  color: #666666;
+}
+.input-box select {
+  padding: 7.5px 15px;
+  width: 100%;
+  border: 1px solid #cccccc;
+  outline: none;
+  font-size: 16px;
+  display: inline-block;
+  height: 40px;
+  color: #666666;
+}
+.input-box option {
+  font-size: 16px;
+}
+.input-box input[type="checkbox"] {
+  height: 1.5em;
+  width: 1.5em;
+  vertical-align: middle;
+  line-height: 2em;
+}
+.input-box textarea {
+  padding: 7.5px 15px;
+  width: 100%;
+  border: 1px solid #cccccc;
+  outline: none;
+  font-size: 16px;
+  min-height: 120px;
+  color: #666666;
+}
+.btn-box {
+  text-align: right;
+  margin-top: 30px;
+}
+.btn-box button {
+  padding: 7.5px 15px;
+  border-radius: 2px;
+  background-color: #009999;
+  color: #ffffff;
+  border: none;
+  outline: none;
+}
+/* css thanh toán */
+.text_tt {
+  color: rgb(61, 112, 207);
+  font-weight: 600;
+}

@@ -1,0 +1,23 @@
+<div class="container">
+  <h4>Các sản phẩm của: {{tenLoai}}</h4>
+  <div class="row">
+    <div
+      ng-repeat="sp in listTimKiemLoai"
+      class="col-lg-4 d-flex justify-content-around my-3"
+    >
+      <div class="card" style="width: 18rem">
+        <img
+          src="../assets/ip/{{sp.anh}}.webp"
+          class="card-img-top"
+          alt="ảnh san phẩm"
+        />
+        <div class="card-body">
+          <a href="#detail/{{sp.id}}"><h5 class="card-title">{{sp.ten}}</h5></a>
+          <p class="card-text">{{sp.mota}}</p>
+          <p>Giá: {{sp.giaSale}} <span>{{sp.gia}}</span></p>
+          <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
