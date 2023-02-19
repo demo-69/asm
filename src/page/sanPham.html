@@ -22,32 +22,60 @@
           <a href="#dtGaming/{{lsp.theLoai}}">{{lsp.theLoai}}</a>
         </li>
       </ul>
-      <div class="addSanPham"></div>
     </div>
     <div
       style="background-color: rgb(218, 219, 219); border-radius: 20px"
       class="sanPham w-100"
     >
-      <div class="row">
-        <div
-          ng-repeat="sp in listSanPham"
-          class="col-lg-4 d-flex justify-content-around my-3"
-        >
-          <div class="card" style="width: 18rem">
-            <img
-              src="../assets/ip/{{sp.anh}}.webp"
-              class="card-img-top"
-              alt="ảnh san phẩm"
-            />
-            <div class="card-body">
-              <a href="#detail/{{sp.id}}"
-              ><h5 class="card-title">{{sp.ten}}</h5></a
-            >
-              <p class="card-text">{{sp.mota}}</p>
-              <p>Giá: {{sp.giaSale}} <span>{{sp.gia}}</span></p>
-              <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+      <div class="sanphamhot">
+        <div class="row">
+          <div ng-repeat="sp in listPage" class="col-lg-4">
+            <div class="card" style="width: 18rem">
+              <img
+                src="../assets/ip/{{sp.anh}}"
+                class="card-img-top"
+                alt="ảnh san phẩm"
+              />
+              <div class="card-body">
+                <a href="#detail/{{sp.id}}"
+                  ><h5 class="card-title">{{sp.ten}}</h5></a
+                >
+
+                <p class="card-text">{{sp.mota}}</p>
+                <p>Giá: {{sp.giaSale}} <span>{{sp.gia}}</span></p>
+                <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+              </div>
             </div>
           </div>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li
+                class="page-item"
+                ng-click="getPhanTrang(pageHienTai-1,9,tenLoai)"
+              >
+                <span class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </span>
+              </li>
+
+              <li
+                ng-repeat="n in pagin"
+                ng-click="getPhanTrang(n,8)"
+                class="page-item"
+              >
+                <span class="page-link">{{n}}</span>
+              </li>
+
+              <li
+                class="page-item"
+                ng-click="getPhanTrang(pageHienTai+1,9,tenLoai)"
+              >
+                <span class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </span>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>

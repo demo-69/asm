@@ -4,15 +4,23 @@
       <h1>Đăng nhập vào website</h1>
       <div class="input-box">
         <i></i>
-        <input type="text" ng-model="user" placeholder="Nhập username" />
+        <input type="text" ng-model="user" placeholder="Nhập username" /><span
+          class="text-danger"
+          >{{eror.user}}</span
+        >
       </div>
       <div class="input-box">
         <i></i>
-        <input type="password" ng-model="pass" placeholder="Nhập mật khẩu" />
+        <input
+          type="password"
+          ng-model="pass"
+          placeholder="Nhập mật khẩu"
+        /><span class="text-danger">{{eror.pass}}</span>
       </div>
       <div class="btn-box">
         <button ng-click="dangNhap($event);" type="submit">Đăng nhập</button>
       </div>
+      Chưa có tài khoản ?<a href="#dangKy">Đăng ký ngay</a>
     </form>
   </div>
 </div>

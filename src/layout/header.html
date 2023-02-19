@@ -100,10 +100,18 @@
           ></i>
         </a>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#dangNhap">Đăng nhập</a></li>
-          <li><a class="dropdown-item" href="#dangKy">Đăng ký</a></li>
-          <li><a class="dropdown-item" href="#doiMK">Đổi mật khẩu</a></li>
-          <li><a class="dropdown-item" href="#quanLy">Quản lý</a></li>
+          <li ng-if="!user1">
+            <a class="dropdown-item" href="#dangNhap">Đăng nhập</a>
+          </li>
+          <li ng-if="!user1">
+            <a class="dropdown-item" href="#dangKy">Đăng ký</a>
+          </li>
+          <li ng-if="user1">
+            <a class="dropdown-item" href="#doiMK">Đổi mật khẩu</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#quanLy">Quản lý</a>
+          </li>
         </ul></span
       >
       <!-- <li class="nav-item dropdown"> -->

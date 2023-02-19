@@ -1,11 +1,13 @@
 window.sanPhamController = function ($scope, $routeParams, $http, $rootScope) {
   $rootScope.listSanPham = [];
-  $scope.listPages = [];
+  $rootScope.listSanPhamMoiNhat = [];
+  $rootScope.listPages = [];
   $rootScope.tongSp = [];
   $rootScope.pagin = [];
+  $rootScope.listPage1 = [];
   $rootScope.listLoaiSP = [];
-
-  $scope.pageHienTai = 1;
+  $scope.man1 = 1;
+  $rootScope.pageHienTai = 1;
   $scope.eror = {
     hasErrors: false,
   };
@@ -18,26 +20,32 @@ window.sanPhamController = function ($scope, $routeParams, $http, $rootScope) {
     loai: "",
     anh: "",
   };
+  // console.log($rootScope.user1);
 
   $scope.vitriUpdate = -1;
-  $scope.vitriUpdateTheLoai = -1;
+  $scope.vitriUpdateTheLoai = "";
 
   $http.get(sanPhamAPI).then(function (response) {
     $rootScope.listSanPham = response.data;
-    for (var i = 1; i < Math.ceil(response.data.length / 8); i++) {
+    console.log($rootScope.listSanPham);
+    for (var i = 1; i < Math.ceil(response.data.length / 4); i++) {
       $rootScope.pagin.push(i);
     }
   });
+
   $scope.getPhanTrang = function (page, limit) {
     $http.get(sanPham(page, limit)).then(function (response) {
-      $scope.listPage = response.data;
-      $scope.pageHienTai = page;
+      $rootScope.listPage = response.data;
+      $rootScope.pageHienTai = page;
     });
   };
 
-  $http.get(sanPham(1, 8)).then(function (response) {
-    $scope.listPage = response.data;
-    $scope.pageHienTai = 1;
+  $http.get(sanPham(1, 4)).then(function (response) {
+    $rootScope.listPage = response.data;
+    $rootScope.pageHienTai = 1;
+  });
+  $http.get(sanPhamMoi(1, 4)).then(function (response) {
+    $rootScope.listPage1 = response.data;
   });
 
   $scope.addProduct = function (event) {
@@ -69,13 +77,25 @@ window.sanPhamController = function ($scope, $routeParams, $http, $rootScope) {
       $scope.eror.hasErrors = true;
       $scope.eror.loai = "Không được để trống";
     }
-    if ($scope.fromProduct.anh === "") {
-      $scope.eror.hasErrors = true;
-      $scope.eror.anh = "Không được để trống";
-    }
+    // if ($scope.fromProduct.anh === "") {
+    //   $scope.eror.hasErrors = true;
+    //   $scope.eror.anh = "Không được để trống";
+    // }
     if ($scope.eror.hasErrors) return;
+
+    const fileInput = document.getElementById("files");
+    for (const file of fileInput.files) {
+      console.log(file.name);
+      $scope.fromProduct.anh = file.name;
+      console.log($scope.fromProduct.anh);
+    }
+    console.log("oke");
     $http.post(sanPhamAPI, $scope.fromProduct).then(function (response) {
+      console.log("oke");
+      console.log($scope.fromProduct);
       $scope.listSanPham.push(response.data);
+      console.log("oke");
+      alert("Add thành công");
     });
   };
   $scope.detailSanPham = function (event, index) {
@@ -146,31 +166,52 @@ window.sanPhamController = function ($scope, $routeParams, $http, $rootScope) {
   $http.get(loaiAPI).then(function (response) {
     $rootScope.listLoaiSP = response.data;
   });
+  $scope.theLoai1 = "";
   $scope.addTheLoai = function (event) {
     $scope.eror = {
       hasErrors: false,
     };
+    console.log("okee");
+    console.log($scope.theLoai1);
     if ($scope.theLoai1 === "") {
       $scope.eror.hasErrors = true;
       $scope.eror.theLoai1 = "Không được để trống";
     }
     if ($scope.eror.hasErrors) return;
-    $http.post(loaiAPI, $scope.theLoai).then(function (response) {
+    console.log("okee");
+    console.log($scope.theLoai1);
+    $http.post(loaiAPI, { theLoai: $scope.theLoai1 }).then(function (response) {
       $rootScope.listLoaiSP.push(response.data);
     });
   };
-  $scope.detail = function (event) {
+  $scope.detail = function (event, index) {
     event.preventDefault();
     let tl = $rootScope.listLoaiSP[index];
     $scope.theLoai1 = tl.theLoai;
     $scope.vitriUpdateTheLoai = index;
   };
+  $scope.updateTheLoai = function (event) {
+    event.preventDefault();
+
+    let tl = $scope.listLoaiSP[$scope.vitriUpdateTheLoai];
+
+    let api = loaiAPI + "/" + tl.id;
+    $http.put(api, { theLoai: $scope.theLoai1 }).then(function (response) {
+      $scope.listLoaiSP[$scope.vitriUpdateTheLoai] = response.data;
+    });
+  };
   $scope.remove = function (event, index) {
     event.preventDefault();
     let tl = $rootScope.listLoaiSP[index];
-    $http.delete(loaiAPI).then(function () {
+    console.log(tl);
+    let api = loaiAPI + "/" + tl.id;
+    $http.delete(api).then(function () {
       $rootScope.listLoaiSP.splice(index, 1);
-      alert("Xóa thành công");
+      // alert("Xóa thành công");
     });
+  };
+
+  $scope.updateTrang = function (so) {
+    $scope.man1 = so;
   };
 };

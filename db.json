@@ -4,11 +4,15 @@
       "username": "admin",
       "password": "admin",
       "vaiTro": "quan ly",
+      "ngaySinh": "",
+      "gioiTinh": "",
+      "soThich": "",
+      "gioiThieu": "",
       "id": "1"
     },
     {
       "username": "kh1",
-      "password": "kh1",
+      "password": "123",
       "vaiTro": "khach hang",
       "id": "2"
     },
@@ -23,6 +27,10 @@
       "password": "kh3",
       "vaiTro": "khach hang",
       "id": "4"
+    },
+    {
+      "password": "321",
+      "id": "sCc8ie2"
     }
   ],
   "sanPham": [
@@ -32,7 +40,7 @@
       "gia": 93,
       "giaSale": 89,
       "manHinh": "manHinh 2",
-      "anh": "iphone-13-pro-xanh.jpg",
+      "anh": "iphone-13-pro-xanh.jpg.webp",
       "hang": "iphone",
       "loai": "Pin trâu",
       "id": "2"
@@ -43,7 +51,7 @@
       "gia": 39,
       "giaSale": 45,
       "manHinh": "manHinh 3",
-      "anh": "iphone-13-xanh.jpg",
+      "anh": "iphone-13-xanh.jpg.webp",
       "hang": "iphone",
       "loai": "Điện thoại gaming",
       "id": "3"
@@ -54,7 +62,7 @@
       "gia": 2,
       "giaSale": 30,
       "manHinh": "manHinh 4",
-      "anh": "iphone-14-mau-den.jpg",
+      "anh": "iphone-14-mau-den.jpg.webp",
       "hang": "iphone",
       "loai": "Hỗ trợ 5G",
       "id": "4"
@@ -65,7 +73,7 @@
       "gia": 16,
       "giaSale": 34,
       "manHinh": "manHinh 5",
-      "anh": "s23-ultra-tim",
+      "anh": "s23-ultra-tim.webp",
       "hang": "Samsung",
       "loai": "Dung lượng lớn",
       "id": "5"
@@ -76,7 +84,7 @@
       "gia": 98,
       "giaSale": 15,
       "manHinh": "manHinh 6",
-      "anh": "samsung_galaxy_z_flip_m_i_2022-1_1",
+      "anh": "samsung_galaxy_z_flip_m_i_2022-1_1.webp",
       "hang": "Samsung",
       "loai": "Hỗ trợ 5G",
       "id": "6"
@@ -87,7 +95,7 @@
       "gia": 41,
       "giaSale": 59,
       "manHinh": "manHinh 7",
-      "anh": "samsung-galaxy-a73-1-600x600",
+      "anh": "samsung-galaxy-a73-1-600x600.webp",
       "hang": "Samsung",
       "loai": "Pin trâu",
       "id": "7"
@@ -98,7 +106,7 @@
       "gia": 70,
       "giaSale": 4,
       "manHinh": "manHinh 8",
-      "anh": "poco-x4-pro",
+      "anh": "poco-x4-pro.webp",
       "hang": "xiaomi",
       "loai": "Pin trâu",
       "id": "8"
@@ -109,7 +117,7 @@
       "gia": 92,
       "giaSale": 76,
       "manHinh": "manHinh 9",
-      "anh": "sm-s908_galaxys22ultra_front_burgundy_211119",
+      "anh": "sm-s908_galaxys22ultra_front_burgundy_211119.webp",
       "hang": "Samsung",
       "loai": "Điện thoại gaming",
       "id": "9"
@@ -120,7 +128,7 @@
       "gia": 28,
       "giaSale": 43,
       "manHinh": "manHinh 10",
-      "anh": "xiaomi-redmi-10c-1-002",
+      "anh": "xiaomi-redmi-10c-1-002.webp",
       "hang": "xiaomi",
       "loai": "Điện thoại gaming",
       "id": "10"
@@ -131,7 +139,7 @@
       "gia": 22,
       "giaSale": 63,
       "manHinh": "manHinh 11",
-      "anh": "xiaomi-12t-xanh_2",
+      "anh": "xiaomi-12t-xanh_2.webp",
       "hang": "xiaomi",
       "loai": "Dung lượng lớn",
       "id": "11"
@@ -142,7 +150,7 @@
       "gia": 13,
       "giaSale": 61,
       "manHinh": "manHinh 12",
-      "anh": "xiaomi-12t-den_1",
+      "anh": "xiaomi-12t-den_1.webp",
       "hang": "xiaomi",
       "loai": "Dung lượng lớn",
       "id": "12"
@@ -153,7 +161,7 @@
       "gia": 54,
       "giaSale": 86,
       "manHinh": "manHinh 13",
-      "anh": "iphone-14-plus-tim.jpg",
+      "anh": "iphone-14-plus-tim.jpg.webp",
       "hang": "iphone",
       "loai": "Điện thoại gaming",
       "id": "13"
@@ -164,21 +172,10 @@
       "gia": 72,
       "giaSale": 41,
       "manHinh": "manHinh 14",
-      "anh": "pms_1655902420.18254534_1",
+      "anh": "pms_1655902420.18254534_1.webp",
       "hang": "xiaomi",
       "loai": "Pin trâu",
       "id": "14"
-    },
-    {
-      "ten": "ten 15",
-      "mota": "mota 15",
-      "gia": 30,
-      "giaSale": 19,
-      "manHinh": "manHinh 15",
-      "anh": "anh 15",
-      "hang": "hang 15",
-      "loai": "loai 15",
-      "id": "15"
     },
     {
       "ten": "Iphone SE 2023",
@@ -186,10 +183,40 @@
       "gia": 4,
       "giaSale": 100,
       "manHinh": "manHinh 16",
-      "anh": "iphone-se-2023-minh-hoa-00.jpg",
+      "anh": "iphone-se-2023-minh-hoa-00.jpg.webp",
       "hang": "iphone",
       "loai": "Pin trâu",
       "id": "16"
+    },
+    {
+      "ten": "123",
+      "giaSale": "123",
+      "mota": "123",
+      "manHinh": "123",
+      "hang": "123",
+      "loai": "Điện thoại gaming",
+      "anh": "iphone-se-2023-minh-hoa-00.jpg.webp",
+      "id": "Dy_lM8v"
+    },
+    {
+      "ten": "123",
+      "giaSale": "123",
+      "mota": "12",
+      "manHinh": "123",
+      "hang": "123",
+      "loai": "Pin trâu",
+      "anh": "",
+      "id": "gL7QuqT"
+    },
+    {
+      "ten": "321",
+      "giaSale": "321",
+      "mota": "31",
+      "manHinh": "321",
+      "hang": "31",
+      "loai": "Dung lượng lớn",
+      "anh": "",
+      "id": "X3rGNU9"
     }
   ],
   "loai": [
@@ -210,7 +237,8 @@
       "id": "4"
     },
     {
-      "id": "og1pakE"
+      "theLoai": "123",
+      "id": "xSMCqa7"
     }
   ]
 }

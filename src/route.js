@@ -28,12 +28,15 @@ app1.config(function ($routeProvider, $locationProvider) {
     })
     .when("/dangNhap", {
       templateUrl: "./page/dangNhap.html",
+      controller: loginController,
     })
     .when("/dangKy", {
       templateUrl: "./page/dangKy.html",
+      controller: loginController,
     })
     .when("/doiMK", {
       templateUrl: "./page/doiMk.html",
+      controller: loginController,
     })
     .when("/sanPham", {
       templateUrl: "./page/sanPham.html",
@@ -59,9 +62,7 @@ app1.config(function ($routeProvider, $locationProvider) {
       templateUrl: "./page/loaiSp.html",
       controller: chitietSP,
     })
-    .when("/dangKy", {
-      templateUrl: "./page/dangKy.html",
-    })
+
     .when("/huongDanTT", {
       templateUrl: "./page/hdThanhToan.html",
     })

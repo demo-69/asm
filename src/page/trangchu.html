@@ -35,7 +35,7 @@
       <div ng-repeat="sp in listPage" class="col-lg-3">
         <div class="card" style="width: 18rem">
           <img
-            src="../assets/ip/{{sp.anh}}.webp"
+            src="../assets/ip/{{sp.anh}}"
             class="card-img-top"
             alt="ảnh san phẩm"
           />
@@ -52,7 +52,7 @@
       </div>
       <nav aria-label="Page navigation example">
         <ul class="pagination">
-          <li class="page-item" ng-click="getPhanTrang(pageHienTai-1,8)">
+          <li class="page-item" ng-click="getPhanTrang(pageHienTai-1,4)">
             <span class="page-link" href="#" aria-label="Previous">
               <span aria-hidden="true">&laquo;</span>
             </span>
@@ -60,13 +60,13 @@
 
           <li
             ng-repeat="n in pagin"
-            ng-click="getPhanTrang(n,8)"
+            ng-click="getPhanTrang(n,4)"
             class="page-item"
           >
             <span class="page-link">{{n}}</span>
           </li>
 
-          <li class="page-item" ng-click="getPhanTrang(pageHienTai+1,8)">
+          <li class="page-item" ng-click="getPhanTrang(pageHienTai+1,4)">
             <span class="page-link" href="#" aria-label="Next">
               <span aria-hidden="true">&raquo;</span>
             </span>
@@ -78,10 +78,10 @@
   <div class="product"><h4>Sản phẩm mới nhất</h4></div>
   <div class="sanphamhot">
     <div class="row">
-      <div ng-repeat="sp in listPage" class="col-lg-3">
+      <div ng-repeat="sp in listPage1" class="col-lg-3">
         <div class="card" style="width: 18rem">
           <img
-            src="../assets/ip/{{sp.anh}}.webp"
+            src="../assets/ip/{{sp.anh}}"
             class="card-img-top"
             alt="ảnh san phẩm"
           />
@@ -95,29 +95,6 @@
           </div>
         </div>
       </div>
-      <nav aria-label="Page navigation example">
-        <ul class="pagination">
-          <li class="page-item" ng-click="getPhanTrang(pageHienTai-1,8)">
-            <span class="page-link" href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-            </span>
-          </li>
-
-          <li
-            ng-repeat="n in pagin"
-            ng-click="getPhanTrang(n,8)"
-            class="page-item"
-          >
-            <span class="page-link">{{n}}</span>
-          </li>
-
-          <li class="page-item" ng-click="getPhanTrang(pageHienTai+1,8)">
-            <span class="page-link" href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </span>
-          </li>
-        </ul>
-      </nav>
     </div>
   </div>
 </div>

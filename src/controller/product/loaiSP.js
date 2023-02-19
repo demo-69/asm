@@ -6,6 +6,7 @@ window.loaiSPController = function ($scope, $rootScope, $http) {
   $http.get(loaiAPI).then(function (response) {
     $rootScope.listLoaiSP = response.data;
   });
+  $scope.theLoai1 = "";
   $scope.addTheLoai = function (event) {
     $scope.eror = {
       hasErrors: false,
@@ -15,7 +16,8 @@ window.loaiSPController = function ($scope, $rootScope, $http) {
       $scope.eror.theLoai1 = "Không được để trống";
     }
     if ($scope.eror.hasErrors) return;
-    $http.post(loaiAPI, $scope.theLoai).then(function (response) {
+    console.log($scope.theLoai1);
+    $http.post(loaiAPI, { theLoai: $scope.theLoai1 }).then(function (response) {
       $rootScope.listLoaiSP.push(response.data);
     });
   };
